@@ -25,7 +25,6 @@ reset.addEventListener('click', function(){
     result = 0
     input_box.value = ""
     result_box.value = ""
-    log_box.value = ""
     event.preventDefault() 
     console.log("Reset")   
     equalOperation = false;
@@ -157,7 +156,7 @@ equal.addEventListener('click', (event)=>{
                     break;
             }
             equalOperation = true;
-            log = log + " = " + result;
+            log = log + " = " + result + "\n";
             result_box.value = result;
             log_box.value = log;
         }
